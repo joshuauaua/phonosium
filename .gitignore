@@ -1,0 +1,7 @@
+# macOS
+.DS_Store
+*.DS_Store
+
+# Large media (optional — remove if you want loop.wav tracked)
+*.mov
+ZOOM*.WAV
