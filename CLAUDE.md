@@ -55,6 +55,15 @@ Edit `_main.pd`:
 
 Outdoor tuning: add `*~ 3` after `adc~` for gain, `[hip~ 80]` per channel for wind noise reduction. Keep Master below 0.85 to prevent feedback.
 
+### Bela CPU Budget
+
+Before expanding to 4 independent FX chains (Phase 3), measure CPU in Bela IDE
+(console shows % usage). Target: < 60% with one full chain. If over budget:
+- Remove fx_pitchshift from the serial chain (it contributes the least to the
+  installation's sonic character and is the simplest to drop)
+- Reduce fx_granular voices from 3 to 2: change offsets to 0 / 0.5,
+  update *~ 0.667 normalizer to *~ 0.5
+
 ## Known Limitations
 
 - `fx_pitchshift.pd` is ring modulation (adds constant Hz to all partials), not a true semitone pitch shift. Intentional design choice.

@@ -10,10 +10,10 @@
 #X obj 160 155 delread~ rvbuf 743;
 #X obj 270 155 delread~ rvbuf 1153;
 #X obj 380 155 delread~ rvbuf 1657;
-#X obj 60 190 *~ 0.6;
-#X obj 160 190 *~ 0.5;
-#X obj 270 190 *~ 0.4;
-#X obj 380 190 *~ 0.3;
+#X obj 60 190 *~ 0.30;
+#X obj 160 190 *~ 0.25;
+#X obj 270 190 *~ 0.20;
+#X obj 380 190 *~ 0.15;
 #X obj 100 230 +~;
 #X obj 300 230 +~;
 #X obj 200 265 +~;
